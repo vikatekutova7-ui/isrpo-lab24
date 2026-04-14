@@ -50,18 +50,74 @@
 
 
 
-const product = {
-  name: "Молоко",
-  price: 100,
-  category: "Продукты питания",
-  inStock: true
-};
+// const product = {
+//   name: "Молоко",
+//   price: 100,
+//   category: "Продукты питания",
+//   inStock: true
+// };
 
-const { name: productName, price, category, inStock } = product;
-console.log(productName, price, category, inStock);
+// const { name: productName, price, category, inStock } = product;
+// console.log(productName, price, category, inStock);
 
-function printProduct({ name, price, category, inStock }) {
-  console.log(`Товар: ${name}, цена: ${price} руб., категория: ${category}, наличие: ${inStock ? "есть" : "нет"}`);
-}
+// function printProduct({ name, price, category, inStock }) {
+//   console.log(`Товар: ${name}, цена: ${price} руб., категория: ${category}, наличие: ${inStock ? "есть" : "нет"}`);
+// }
 
-printProduct(product);
+// printProduct(product);
+
+// console.log("\n=== Spread для массивов ===");
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const combined = [...arr1, ...arr2];
+// console.log("Объединённый массив:", combined);
+// const copy = [...arr1];
+// console.log("Копия массива:", copy);
+// const extended = [0, ...arr1, 7, 8];
+// console.log("Расширенный массив:", extended);
+
+// console.log("\n=== Spread для объектов ===");
+// const person = { 
+//     name: "Иван", 
+//     age: 30 
+// };
+// const address = { 
+//     city: "Санкт-Петербург", 
+//     street: "Невский проспект" 
+// };
+// const fullInfo = { ...person, ...address };
+// console.log("Полная информация:", fullInfo);
+// const personCopy = { ...person };
+// console.log("Копия объекта:", personCopy);
+// const updated = { ...person, age: 31, occupation: "Developer" };
+// console.log("Обновлённый объект:", updated);
+
+// console.log("Rest оператор")
+// function sum(...numbers) {
+//   return numbers.reduce((total, num) => total + num, 0);
+// }
+// console.log("Сумма 1,2,3:", sum(1, 2, 3));
+// console.log("Сумма 1,2,3,4,5:", sum(1, 2, 3, 4, 5));
+// const numbers = [10, 20, 30, 40, 50];
+// const [first, second, ...rest] = numbers;
+// console.log("Первое число:", first);
+// console.log("Второе число:", second);
+// console.log("Остальные числа:", rest);
+
+
+
+// const nums1 = [6, 7, 8];
+// const nums2 = [1, 4, 9];
+// const merged = [...nums1, ...nums2];
+// console.log("Объединённые массивы:", merged);
+
+// function findMax(...nums) {
+//   return Math.max(...nums);
+// }
+// console.log("Максимум из 6, 8, 1, 5:", findMax(6, 8, 1, 5));
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const mergedObj = { ...obj1, ...obj2 };
+// console.log("Объединённый объект:", mergedObj);
+
